@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 mongoose
-  .connect(localDB || cloudDB)
+  .connect(cloudDB || localDB)
   .then(()=> console.log('Connected to MongoDB'))
   .catch((error)=>console.error('Failed to connect to MongoDB'));
 
