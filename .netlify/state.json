@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Batangas",
+			"country": {
+				"code": "PH",
+				"name": "Philippines"
+			},
+			"subdivision": {
+				"code": "40",
+				"name": "Calabarzon"
+			},
+			"timezone": "Asia/Manila",
+			"latitude": 13.7524,
+			"longitude": 121.0625
+		},
+		"timestamp": 1713706359492
+	},
+	"siteId": "91275c93-2a5c-4ffa-8fa9-8af0515b2dce"
+}
