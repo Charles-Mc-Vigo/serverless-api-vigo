@@ -26,7 +26,7 @@ router.post('/', async (req,res)=>{
     }
 
     //check if the author's name already exists
-    const existingAuthor = await AuthorModel.find({name: req.body.name});
+    const existingAuthor = await AuthorModel.findOne({name: req.body.name});
     if(existingAuthor){
       return res.status(400).json({message:'Author is already exists'})
     }
