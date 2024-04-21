@@ -5,12 +5,15 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
+const cloudDB = 'mongodb+srv://vigocharlesmc:9SG7oWaUDchBfxaz@cluster0.5esntvv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const localDB = 'mongodb://localhost:27017/ServerlessApi/VigoApi';
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 mongoose
-  .connect(process.env.cloudDB || process.env.localDB)
+  .connect(localDB || cloudDB)
   .then(()=> console.log('Connected to MongoDB'))
   .catch((error)=>console.error('Failed to connect to MongoDB'));
 
