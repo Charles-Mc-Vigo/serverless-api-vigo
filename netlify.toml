@@ -3,6 +3,3 @@
 
 [functions]
   timeout = 30
-
-  [functions.api.timeout]
-    timeout = 30 # Timeout in seconds (e.g., 30 seconds)
