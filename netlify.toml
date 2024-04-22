@@ -1,3 +1,2 @@
 [build]
-  functions = "functions/"
-  timeout = 20
+  functions = "functions"
