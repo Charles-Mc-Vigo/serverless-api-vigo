@@ -2,5 +2,6 @@
   functions = "functions"
 
 [functions]
-  node_bundle = false
+  [functions.node_bundle]
+    external_node_modules = []
   timeout = 300
