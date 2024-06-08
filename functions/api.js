@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-const cloudDB = 'mongodb+srv://vigocharlesmc:qIwYJ5V0lpKVutlz@cluster0.5esntvv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const cloudDB = 'mongodb+srv://vigocharlesmc:Dtg4NaQe9QZvbdnk@cluster0.5esntvv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const localDB = 'mongodb://localhost:27017/ServerlessApi/VigoApi';
 
 app.use(cors());
